@@ -47,6 +47,19 @@ body.menu-is-open{overflow:hidden}
 .hero-actions .btn{max-width:100%}
 }
 @media(max-width:390px){.hero h1{font-size:clamp(2.85rem,11.5vw,3.65rem)}}
+/* Mobile hero: editorial overlay with complete hands in frame */
+@media(max-width:720px){
+.hero{position:relative!important;display:flex!important;flex-direction:row!important;align-items:flex-end!important;justify-content:flex-start!important;min-height:850px!important;min-height:100svh!important;padding-top:74px!important;overflow:hidden!important;background:#f8f0ed}
+.hero-image{position:absolute!important;inset:0!important;top:74px!important;width:100%!important;height:calc(100% - 74px)!important;aspect-ratio:auto!important;overflow:hidden!important;background:#e8c6c8}
+.hero-image img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:54% 15%!important;transform:scale(1)!important;animation:none!important}
+.hero:before{content:''!important;display:block!important;position:absolute!important;inset:74px 0 0!important;z-index:1!important;background:linear-gradient(to bottom,transparent 0%,#f8f0ed00 31%,#f8f0ed60 47%,#f8f0edec 63%,#f8f0ed 79%,#f8f0ed 100%)!important}
+.hero-inner{position:relative!important;z-index:2!important;width:min(100% - 36px,560px)!important;padding:clamp(390px,62svh,660px) 0 55px!important;margin:auto}
+.hero-copy{max-width:100%}
+.hero h1{font-size:clamp(3.25rem,12vw,5.6rem);line-height:1.06;margin:14px 0 22px}
+.hero-desc{font-size:clamp(.9rem,3.5vw,1.05rem)}
+.hero-actions{gap:14px}
+}
+@media(max-width:390px){.hero h1{font-size:clamp(2.85rem,11.5vw,3.65rem)}}
 </style></head><body><a class="skip" href="#main">К содержимому</a><header class="site-header" id="header"><div class="wrap nav"><a class="logo" href="#top" aria-label="ÉLISE — на главную">ÉLISE</a><nav class="nav-links" id="navigation" aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#calculator">Калькулятор</a><a href="#about">О студии</a><a href="#portfolio">Наши работы</a><a href="#team">Мастера</a><a href="#reviews">Отзывы</a><a href="#contact">Контакты</a></nav><button class="btn" data-book>Записаться ↗</button><button class="menu-toggle" id="menu" aria-label="Открыть меню" aria-expanded="false" aria-controls="navigation"><span class="menu-bars" aria-hidden="true"><i></i><i></i><i></i></span></button></div></header><main id="main"><section class="hero" id="top"><div class="hero-image"><img src="./file_00000000521c81f4b2a4fe3ed75f094b.png" alt="Две руки с глянцевым бордовым маникюром на розовом шёлке" fetchpriority="high"></div><div class="wrap hero-inner"><div class="hero-copy reveal"><span class="eyebrow">ÉLISE · beauty atelier</span><h1>Искусство <em>быть собой.</em></h1><p class="hero-desc">Маникюр, который подчёркивает вашу индивидуальность. Забота, которую хочется повторить.</p><div class="hero-actions"><button class="btn" data-book>Записаться на процедуру <span>↗</span></button><a class="btn outline" href="#calculator">Рассчитать стоимость ↘</a></div></div></div><span class="hero-note">Красота в каждом прикосновении</span></section>
 <section class="intro"><div class="wrap intro-inner"><div class="serif">В ÉLISE мы верим: настоящая роскошь — это время, посвящённое себе.</div><small>Тонкая эстетика · Деликатный уход</small></div></section>
 <section class="section services" id="services"><div class="wrap"><div class="head reveal"><div><span class="eyebrow">01 / Ритуалы красоты</span><h2>Ваш идеальный <em>уход.</em></h2></div><p>От лаконичной классики до выразительного дизайна — процедуры, которые становятся маленьким праздником.</p></div><div class="services-grid" id="serviceCards"></div><div style="margin-top:30px;text-align:center"><button class="btn outline" id="allServices">Посмотреть полный прайс ↓</button></div><div id="priceList" hidden style="margin-top:30px"></div></div></section>
